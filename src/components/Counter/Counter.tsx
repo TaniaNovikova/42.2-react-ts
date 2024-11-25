@@ -6,11 +6,11 @@ function Counter() {
   const [count, setCount] = useState(0);
 
   const onPlusClick = () => {
-    setCount((prevValue) => prevValue + 1);
+    setCount((prevValue:number):number => prevValue + 1);
   };
 
   const onMinusClick = () => {
-    setCount((prevValue) => prevValue - 1);
+    setCount((prevValue:number):number => prevValue - 1);
   };
 
   return (

@@ -6,18 +6,18 @@ function Feedback() {
   const [likes, setLikes] = useState(0);
   const [dislikes, setDisikes] = useState(0);
 
-  const addLike = () => {
-    setLikes((prevValue) => prevValue + 1);
+  const addLike = (): void => {
+    setLikes((prevValue: number): number => prevValue + 1);
   };
 
-  const addDislike = () => {
-    setDisikes((prevValue) => prevValue + 1);
+  const addDislike = (): void => {
+    setDisikes((prevValue: number): number => prevValue + 1);
   };
 
-  const resetResults = ()=>{
+  const resetResults = (): void => {
     setLikes(0);
     setDisikes(0);
-  }
+  };
 
   return (
     <div className="feedback-container">
