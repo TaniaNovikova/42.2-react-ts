@@ -1,8 +1,15 @@
+import { MouseEvent } from "react";
+
 import Button from "../Button/Button";
 import Input from "../Input/Input";
 import "./styles.css";
 
 function LoginForm() {
+  const login = (event: MouseEvent):void => {
+    event.preventDefault();
+    console.log("User logged in succesfully");
+  };
+  
   return (
     <form className="login-form-wrapper">
       <div className="login-form-title">Login form</div>
@@ -22,7 +29,7 @@ function LoginForm() {
           label="Password"
         />
       </div>
-      <Button name="Login" type="submit" />
+      <Button name="Login" type="submit" onClick={login} />
     </form>
   );
 }
