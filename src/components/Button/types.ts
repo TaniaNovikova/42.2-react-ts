@@ -5,11 +5,11 @@
 //   onClick?: () => void;
 // }
 
-type ButtonType = "button" | 'submit' | "reset";
+type ButtonType = "button" | "submit" | "reset";
 
 export interface ButtonProps {
   name: string;
   type?: ButtonType;
   onClick?: () => void;
+  disabled?: boolean;
 }
-
