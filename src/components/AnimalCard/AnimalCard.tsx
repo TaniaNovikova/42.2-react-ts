@@ -1,5 +1,17 @@
 import "./styles.css";
-import { AnimalCardProps } from  "./types";
+import { AnimalCardProps } from './types';
+
+// interface Animal {
+//   name: string
+//   species: string
+//   role: string
+//   skills: string[]
+//   image: string
+// }
+
+// interface AnimalCardProps {
+//   animalData: Animal
+// }
 
 function AnimalCard({ animalData }: AnimalCardProps) {
   return (
@@ -12,3 +24,4 @@ function AnimalCard({ animalData }: AnimalCardProps) {
 }
 
 export default AnimalCard;
+

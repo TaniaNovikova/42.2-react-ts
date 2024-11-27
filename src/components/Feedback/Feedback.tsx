@@ -3,15 +3,15 @@ import Button from "../Button/Button";
 import "./styles.css";
 
 function Feedback() {
-  const [likes, setLikes] = useState(0);
-  const [dislikes, setDisikes] = useState(0);
+  const [likes, setLikes] = useState<number>(0);
+  const [dislikes, setDisikes] = useState<number>(0);
 
   const addLike = (): void => {
-    setLikes((prevValue: number): number => prevValue + 1);
+    setLikes((prevValue) => prevValue + 1);
   };
 
   const addDislike = (): void => {
-    setDisikes((prevValue: number): number => prevValue + 1);
+    setDisikes((prevValue) => prevValue + 1);
   };
 
   const resetResults = (): void => {
