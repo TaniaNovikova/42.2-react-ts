@@ -8,9 +8,9 @@ function LoginForm() {
   };
 
   return (
-    <LoginFormWrapper className="login-form-wrapper">
-      <LoginFormTitle className="login-form-title">Login form</LoginFormTitle>
-      <InputsContainer className="inputs-container">
+    <LoginFormWrapper>
+      <LoginFormTitle>Login form</LoginFormTitle>
+      <InputsContainer>
         <Input
           name="email"
           id="user_email"

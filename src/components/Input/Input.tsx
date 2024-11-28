@@ -4,7 +4,7 @@ import { InputProps } from './types'
 
 function Input({ name, id, type = 'text', placeholder, label }: InputProps) {
   return (
-    <InputContainer className="input-container">
+    <InputContainer>
       {/* Пример оператора условного рендеринга */}
       {label && <InputElementLabel htmlFor={id}>{label}</InputElementLabel>}
       <InputElement
