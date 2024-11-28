@@ -1,6 +1,7 @@
 // @import url(https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic);
 import styled from "@emotion/styled";
-export const LoginFormWrapper = styled.form`
+
+export const LoginFormWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -9,15 +10,14 @@ export const LoginFormWrapper = styled.form`
   border: 1px solid black;
   border-radius: 4px;
   font-family: Lato, Geneva, Tahoma, sans-serif;
-   
-   &:hover {
-    background-color: #f7e8be;
-   }
+  background-color: white;
 `;
+
 export const LoginFormTitle = styled.div`
-   font-size: 24px;
-   font-weight: bold;
+  font-size: 24px;
+  /* font-weight: bold; */
 `;
+
 export const InputsContainer = styled.div`
   display: flex;
   flex-direction: column;
