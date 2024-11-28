@@ -6,7 +6,7 @@ function Button({ name, type = "button", onClick, disabled }: ButtonProps) {
   // console.log(props.buttonName);
 
   return (
-    <MainButton onClick={onClick} className="main-button" type={type} disabled={disabled}>
+    <MainButton onClick={onClick} type={type} disabled={disabled}>
       {name}
     </MainButton>
   );
