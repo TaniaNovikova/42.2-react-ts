@@ -1,4 +1,4 @@
-import styled from "@emotion/styled";
+import styled from '@emotion/styled';
 
 export const InputContainer = styled.div`
   display: flex;
@@ -6,7 +6,8 @@ export const InputContainer = styled.div`
   gap: 4px;
   width: 100%;
 `;
-export const InputElementLabel = styled.label`
+
+export const Label = styled.label`
   font-size: 16px;
   color: #6f6f6f;
 `;
@@ -19,7 +20,8 @@ export const InputElement = styled.input`
   border: 1px solid black;
   border-radius: 4px;
   font-size: 16px;
-  &&::placeholder {
+
+  &::placeholder {
     color: #a19f9f;
   }
 `;

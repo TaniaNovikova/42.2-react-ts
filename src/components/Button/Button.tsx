@@ -2,7 +2,7 @@
 import {MainButton} from './styles'
 import { ButtonProps } from "./types";
 
-function Button({ name, type = "button", onClick, disabled }: ButtonProps) {
+function Button({ name, type = "button", onClick, disabled =false}: ButtonProps) {
   // console.log(props.buttonName);
 
   return (

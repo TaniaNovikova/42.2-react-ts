@@ -1,12 +1,9 @@
 import Button from "../Button/Button";
 import Input from "../Input/Input";
-import  {LoginFormWrapper, LoginFormTitle, InputsContainer} from "./styles";
+import "./styles.ts";
+import { LoginFormWrapper, LoginFormTitle, InputsContainer } from './styles';
 
 function LoginForm() {
-  function login(): void {
-    throw new Error("Function not implemented.");
-  }
-
   return (
     <LoginFormWrapper>
       <LoginFormTitle>Login form</LoginFormTitle>
@@ -26,8 +23,9 @@ function LoginForm() {
           label="Password"
         />
       </InputsContainer>
-      <Button name="Login" type="submit" onClick={login} />
+      <Button name="Login" type="submit" />
     </LoginFormWrapper>
   );
 }
+
 export default LoginForm;

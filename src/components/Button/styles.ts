@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 interface MainButtonStyledProps {
-  disabled?: boolean;
+  disabled: boolean;
 }
 
 export const MainButton = styled.button<MainButtonStyledProps>`
