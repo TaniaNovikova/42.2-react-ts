@@ -5,9 +5,8 @@ import ProductQuantityItem from "../ProductQuantityItem/ProductQuantityItem";
 import Input from "../../../components/Input/Input";
 import Button from "../../../components/Button/Button";
 import {InputProductControl, InputQuantityControl, InputsWrapper, ProductWrapper, QuantityRemoveButtonWrapper, StyledBox1, StyledBox2, StyledUl} from "./styles"
-
 import { Product } from "../ProductNameItem/data";
-import RemoveButtonItem from "../RemoveButtonItem/RemoveButtonItem";
+import ButtonItem from "../ButtonItem/ButtonItem";
 
 function ProductList() {
   const [productName, setProductName] = useState<string>("");
@@ -87,9 +86,8 @@ function ProductList() {
                 quantity={product.quantity}
                 key={product.id}
                 id={product.id}
-                name={""}
               />
-              <RemoveButtonItem removeProduct={removeProduct} id={product.id}/>
+              <ButtonItem onClick= {()=>removeProduct(product.id)}/>
               </QuantityRemoveButtonWrapper>
             ))}
           </StyledUl>
