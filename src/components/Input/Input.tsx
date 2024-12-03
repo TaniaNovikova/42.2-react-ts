@@ -3,7 +3,7 @@ import "./styles.ts";
 import { InputProps } from './types';
 import { InputContainer, InputElement, Label } from './styles';
 
-function Input({ name, id, type = 'text', placeholder, label }: InputProps) {
+function Input({ name, id, type = 'text', placeholder, label, onChange, value, min, step }: InputProps) {
   return (
     <InputContainer>
       {/* Пример оператора условного рендеринга */}
@@ -14,6 +14,10 @@ function Input({ name, id, type = 'text', placeholder, label }: InputProps) {
         type={type}
         placeholder={placeholder}
         className="input-element"
+        onChange={onChange}
+        value={value}
+        min={min}
+        step={step}
       />
     </InputContainer>
   );
